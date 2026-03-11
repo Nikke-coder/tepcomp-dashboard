@@ -56,6 +56,13 @@ const ALLOWED_EMAILS = ['richard.nilsen@tepcomp.fi', 'masi.lehtisalo@tepcomp.fi'
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const BLUE="#3b82f6",GREEN="#22c55e",AMBER="#f59e0b",RED="#f87171",PURPLE="#a78bfa",CYAN="#06b6d4",SLATE="#64748b";
 const ACT_LAST_DEFAULT = 0; // Jan 2026
+// Per-year last confirmed ACT month (0=Jan…11=Dec, -1=full BUD)
+const ACT_LAST_BY_YEAR = {
+  "2023": 11,  // full year ACT
+  "2024": 11,  // full year ACT
+  "2025": 11,  // full year ACT
+  "2026": 0,   // Jan 2026 ACT only
+};
 
 const actBase = {
   revenue:[935706,804551,697165,1098617,736657,617048,486302,630334,858759,653505,847866,523853],
